@@ -1,6 +1,6 @@
 # 📝 YBlogs – A Modern Blog Platform
 
-🚀 **Live Demo**: [https://yblogs.vercel.app](https://yblogs.vercel.app)
+🚀 **Live Demo**: [https://yblogs-phi.vercel.app](https://yblogs-phi.vercel.app)
 
 YBlogs is a blog platform built with **Next.js App Router**, **TypeScript**, **Tailwind CSS**, **React Query**, and **TipTap** editor. It features an admin dashboard, blog management (create, delete), and a beautifully designed public blog page.
 
