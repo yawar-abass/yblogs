@@ -49,7 +49,8 @@ export default function NewPostPage() {
     <SidebarLayout>
       <PostForm
         onSubmit={(data) => {
-          createPostMutation.mutate(data);
+          // Ensure userId is a number; replace 1 with the actual user id as needed
+          createPostMutation.mutate({ ...data, userId: 1 });
         }}
       />
     </SidebarLayout>

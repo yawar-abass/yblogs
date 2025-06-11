@@ -32,7 +32,12 @@ export default function EditPostPage() {
 
   return (
     <SidebarLayout>
-      <PostForm initialData={data} onSubmit={(data) => mutation.mutate(data)} />
+      <PostForm
+        initialData={data}
+        onSubmit={(formData) =>
+          mutation.mutate({ ...formData, userId: data.userId ?? 1 })
+        }
+      />
     </SidebarLayout>
   );
 }

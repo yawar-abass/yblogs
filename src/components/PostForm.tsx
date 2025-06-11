@@ -5,13 +5,14 @@ import { useState } from "react";
 import { useEditor, EditorContent } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 import { Button } from "@/components/ui/button";
+import { Post } from "@/lib/types";
 
 export default function PostForm({
   initialData,
   onSubmit,
 }: {
-  initialData?: any;
-  onSubmit: (data: any) => void;
+  initialData?: Post;
+  onSubmit: (data: Post) => void;
 }) {
   const [title, setTitle] = useState(initialData?.title || "");
 
@@ -20,7 +21,7 @@ export default function PostForm({
     content: initialData?.body || "",
   });
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     onSubmit({
       title,
