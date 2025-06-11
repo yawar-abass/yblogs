@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 YBlogs – A Modern Blog Platform
 
-## Getting Started
+🚀 **Live Demo**: [https://yblogs.vercel.app](https://yblogs.vercel.app)
 
-First, run the development server:
+YBlogs is a blog platform built with **Next.js App Router**, **TypeScript**, **Tailwind CSS**, **React Query**, and **TipTap** editor. It features an admin dashboard, blog management (create, delete), and a beautifully designed public blog page.
+
+---
+
+## ✨ Features
+
+- 🧠 Modern blog system using `App Router`
+- 🔐 Admin panel with post creation/editing
+- ⚡ Optimistic updates with React Query
+- 💬 Rich text editor powered by TipTap
+- 📦 JSONPlaceholder API for demo simulation
+
+---
+
+## 🛠️ Tech Stack
+
+- **Next.js 14+ (App Router)**
+- **TypeScript**
+- **Tailwind CSS**
+- **React Query**
+- **TipTap Editor**
+- **JSONPlaceholder API (Mock backend)**
+
+---
+
+## 📦 Local Installation
+
+> Follow these steps to run the project locally on your machine:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/yblogs.git
+cd yblogs
+```
+
+## 📦 Install Dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Start the Development Server
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 4. Open in Browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to see the application in action.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 5. Admin Dashboard
 
-## Learn More
+Access the admin dashboard at [http://localhost:3000/admin](http://localhost:3000/admin) to manage your blog posts.
 
-To learn more about Next.js, take a look at the following resources:
+### 6. Create a Post
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Click on the "Add post" button in the admin dashboard to add a new blog post. Use the TipTap editor for rich text formatting.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 7. Edit/Delete Posts
 
-## Deploy on Vercel
+In the admin dashboard, you can edit or delete existing posts. Changes will be reflected immediately due to optimistic updates with React Query.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 8. Explore the Public Blog
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Visit the public blog page at [http://localhost:3000/blog](http://localhost:3000/blog) to see your posts displayed beautifully.
+
+### 9. Enjoy!
