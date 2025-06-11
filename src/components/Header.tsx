@@ -12,11 +12,10 @@ const Header = () => {
           <div className="mr-3">Yblogs</div>
         </div>
       </Link>
-      <Button>
-        <Link href="/admin" className="">
-          Admin
-        </Link>
-      </Button>
+
+      <Link href="/admin" className="">
+        <Button className="cursor-pointer">Admin</Button>
+      </Link>
     </header>
   );
 };

@@ -38,15 +38,13 @@ export default function Home() {
       </div>
       {posts.length > MAX_DISPLAY && (
         <div className="flex justify-end text-base leading-6 font-medium mb-10">
-          <Button>
-            <Link
-              href="/blog"
-              className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-              aria-label="All posts"
-            >
-              All Posts &rarr;
-            </Link>
-          </Button>
+          <Link
+            href="/blog"
+            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+            aria-label="All posts"
+          >
+            <Button className="cursor-pointer">All Posts &rarr;</Button>
+          </Link>
         </div>
       )}
     </div>
